@@ -1,0 +1,53 @@
+/*NAV SECTION*/
+.headerPrincipal .container{
+    display: flex; /*trabaja con la etiqueta .headerPrincipal el padre*/
+    align-items: center; /*en el eje y*/
+    justify-content: space-between; /*espacio entre elementos eje x*/
+}
+.headerPrincipal-nav{
+    display: flex;
+}
+
+
+/*SECTION FOOTER*/
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+/*logos*/
+.rodapePrincipal-patrocinadores-list{
+    display: flex;   /*los quiero alado del otro*/
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;  /*no hay espacio suficiente con justify-content: space-between por eso se la da un width al container de los logos 75% (para 3 elementos)*/
+    margin-right: 5%; 
+}
+/*form*/
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+/*contenedor del boton*/
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+
+/*MAPA DE CURSOS*/
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    flex-wrap:wrap ; /*cada 260px forma otra columna*/
+}
+
+
+/*SECCION CURSOS*/
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap; /*va quebrando las columnas a los 20%*/
+}
+.contenidoPrincipal-cursos-link{
+    display:flex ; /*le aplicamos a los hijos porque hay un absolute en el padre que hace que se sobrepongan los hijos del padre(ul)*/ 
+    width: 23%; /*4 elementos(comunas funciona con el wrap) de 20%  para completar el 100%*/
+    
+}
